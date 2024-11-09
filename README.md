@@ -17,7 +17,7 @@ To use this application, you'll need to have Python installed on your system. Yo
 
 ### Installation
 
-Download the latest binaries from [GitHub releases](https://github.com/yourusername/ColorPaletteChanger/releases) or clone the repository using:
+Download the latest binaries from [GitHub releases]([https://github.com/yourusername/ColorPaletteChanger/releases](https://github.com/jjhaggar/PaletteSwapper/releases/latest)) or clone the repository using:
 
 ```
 git clone https://github.com/yourusername/ColorPaletteChanger.git
