@@ -15,15 +15,40 @@ A simple palette swapper for batch replacing indexed color palettes in png files
 
 To use this application, you'll need to have Python installed on your system. You can download it from [python.org](https://python.org).
 
+Additionally, you will need to install the following Python packages:
+- `tkinterdnd2`
+- `Pillow`
+
+It's highly recommended to use a virtual environment (such as those provided by Conda, Miniconda, or Python's `venv`) to isolate your dependencies and avoid conflicts.
+
+
 ### Installation
 
-Download the latest binaries from [GitHub releases](https://github.com/jjhaggar/PaletteSwapper/releases/latest) or clone the repository using:
+1. Download the latest binaries from [GitHub releases](https://github.com/jjhaggar/PaletteSwapper/releases/latest) or clone the repository using:
 
 ```
 git clone https://github.com/yourusername/ColorPaletteChanger.git
 cd ColorPaletteChanger 
 ```
 
+2. (Optional but recommended) Set up a virtual environment:
+- Using Conda:
+```
+conda create --prefix ./env python=3.9
+conda activate ./env
+```
+- Using Python's `venv`:
+```
+python -m venv env
+source env/bin/activate       # On macOS/Linux
+.\env\Scripts\activate        # On Windows
+
+```
+
+3. Install the required dependencies:
+```
+pip install tkinterdnd2 Pillow
+```
 
 ### Usage
 
