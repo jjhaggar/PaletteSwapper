@@ -75,11 +75,30 @@ Building the application is not necessary to run it. You can choose to just inst
 
 #### WIP: Extras (other useful small apps)
 
-Color inverter:
+**Color inverter**: Follow same steps as with PaletteSwapper. Go to its directory and run this to build it:
 
 ```
-pyinstaller --onefile --windowed --icon=color_inverter_icon.ico color_inverter.p
+pyinstaller --onefile --windowed --icon=color_inverter_icon.ico color_inverter.py
 ```
+
+**Convert to Index**:
+
+```
+pyinstaller --onefile --windowed --icon=convert_to_index.ico convert_to_index.py
+```
+
+**Palette Checker**: 
+
+```
+pyinstaller --onefile --windowed --icon=palette_checker.ico palette_checker.py
+```
+
+**Semitransparency Checker**: 
+
+```
+pyinstaller --onefile --windowed --icon=semitransparency_checker.ico semitransparency_checker.py
+```
+
 
 
 ### Usage
