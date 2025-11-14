@@ -73,6 +73,14 @@ Building the application is not necessary to run it. You can choose to just inst
 
   After the build completes, the compiled executable should be available in the newly created `PaletteSwapper/source/dist` directory.
 
+#### WIP: Extras (other useful small apps)
+
+Color inverter:
+
+```
+pyinstaller --onefile --windowed --icon=color_inverter_icon.ico color_inverter.p
+```
+
 
 ### Usage
 
@@ -125,6 +133,6 @@ I am planning to add the following features (hopefully):
 
 ## Contact
 
-- Created by JJHaggar - Feel free to tweet me at [@JJHaggar](https://twitter.com/jjhaggar)!
+- Created by JJHaggar - Feel free to email me at *jjhaggar @ gmail.com* or tweet me at [@JJHaggar](https://twitter.com/jjhaggar)!
 
 
