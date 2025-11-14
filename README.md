@@ -19,7 +19,8 @@ Building the application is not necessary to run it. You can choose to just inst
 
 - Download the latest binaries from [GitHub releases](https://github.com/jjhaggar/PaletteSwapper/releases/latest). Save the executable file anywhere you want.
 - Double-click on the executable file. Click on "More info". Then click on "Run anyway". This warning will only appear once.
-
+![Windows protected your PC dialog](images/windows_protected_step1.png)
+![Windows protected your PC dialog after clicking More info](images/windows_protected_step2.png)
 
 ### Compilation
 
