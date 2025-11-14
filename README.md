@@ -1,5 +1,5 @@
 # PaletteSwapper
-A simple palette swapper for batch replacing indexed color palettes in png files
+A simple palette swapper for batch replacing indexed color palettes in PNG files
 `PaletteSwapper` is a tool designed to help pixel art artists and video game developers efficiently modify the color palettes of indexed PNG images in bulk.
 
 
@@ -9,62 +9,84 @@ A simple palette swapper for batch replacing indexed color palettes in png files
 - Simple and easy-to-use graphical interface.
 - Ability to use predefined palettes or load new ones.
 
+
 ## Getting Started
 
-### Prerequisites
-
-To use this application, you'll need to have Python installed on your system. You can download it from [python.org](https://python.org).
-
-Additionally, you will need to install the following Python packages:
-- `tkinterdnd2`
-- `Pillow`
-
-It's highly recommended to use a virtual environment (such as those provided by Conda, Miniconda, or Python's `venv`) to isolate your dependencies and avoid conflicts.
+Building the application is not necessary to run it. You can choose to just install it or to build it from source, so choose one of the following sections accordingly.
 
 
 ### Installation
 
-1. Download the latest binaries from [GitHub releases](https://github.com/jjhaggar/PaletteSwapper/releases/latest) or clone the repository using:
+- Download the latest binaries from [GitHub releases](https://github.com/jjhaggar/PaletteSwapper/releases/latest). Save the executable file anywhere you want.
+- Double-click on the executable file. Click on "More info". Then click on "Run anyway". This warning will only appear once.
 
-```
-git clone https://github.com/yourusername/ColorPaletteChanger.git
-cd ColorPaletteChanger 
-```
 
-2. (Optional but recommended) Set up a virtual environment:
-- Using Conda:
-```
-conda create --prefix ./env python=3.9
-conda activate ./env
-```
-- Using Python's `venv`:
-```
-python -m venv env
-source env/bin/activate       # On macOS/Linux
-.\env\Scripts\activate        # On Windows
+### Compilation
 
-```
+- **Install Python.**
 
-3. Install the required dependencies:
-```
-pip install tkinterdnd2 Pillow
-```
+  To build this application, you need a working installation of Python. You can download it from [python.org](https://python.org).
+
+- **(Optional but recommended) Set up a virtual environment.**
+
+  It's highly recommended to use a virtual environment (such as Python's built-in venv, Conda, or Miniconda) to isolate the project's dependencies and avoid conflicts with other Python installations on your system.
+
+  - Option A: Using Python's `venv`:
+
+  ```
+  python -m venv env
+  source env/bin/activate       # On macOS/Linux
+  .\env\Scripts\activate        # On Windows
+  ```
+
+  - Option B: Using Conda:
+
+  ```
+  conda create --prefix ./env python=3.9
+  conda activate ./env
+  ```
+
+- **Install dependencies.**
+  
+  This project requires the Python packages `tkinterdnd2`, `Pillow`, and `PyInstaller`. You can install all of them with a single command in your terminal or Command Prompt:
+
+  ```bash
+  python -m pip install pillow tkinterdnd2 pyinstaller
+  ``` 
+
+- **Clone the repository.**
+
+  You can clone the repository and go to the `source` directory with:
+
+  ```bash
+  git clone https://github.com/jjhaggar/PaletteSwapper.git
+  cd PaletteSwapper/source
+  ```
+
+- **Build the application.** Run:
+
+  ```bash
+  pyinstaller --onefile --windowed --icon=palette_swapper_icon.ico palette_swapper.py
+  ```
+
+  After the build completes, the compiled executable should be available in the newly created `PaletteSwapper/source/dist` directory.
+
 
 ### Usage
 
 To change the color palettes of your images:
 
-1. Open the application.
-2. Select the directory where your images are located.
-3. Choose the palette you wish to apply.
-4. Click 'Apply'.
+- Open the application.
+- Select the directory where your images are located.
+- Choose the palette you wish to apply.
+- Click 'Apply'.
 
 
 ## License
 
 ### Third party software
 
-This projecto uses several open source libraries, listed next with their respective licenses:
+This project uses several open source libraries, listed next with their respective licenses:
 
 - **Python & Tkinter**: [Python Software Foundation License](https://docs.python.org/3/license.html)
 - **Pillow**: [Historical Permission Notice and Disclaimer](https://github.com/python-pillow/Pillow/blob/master/LICENSE)
@@ -87,7 +109,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Future Features
 
-I am planning to add the following features (hopefuly):
+I am planning to add the following features (hopefully):
 
 - **Graphical Previews**: Ability to preview changes before applying them.
 - **Recursive Folder Search**: Automatically apply palette changes to images in nested folders.
